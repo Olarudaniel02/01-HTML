@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <style>
+      section {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+    <section class="content_box"></section>
+    <section class="border_box"></section>
+    <style>
+      .block_container {
+        width: 100%;
+        height: 500px;
+        border: 1px solid red;
+      }
+      .block_container div {
+        display: inline-block;
+        margin-bottom: 20 px;
+        width: 24.9%;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+    <div class="block_container">
+      <div>Block 1</div>
+      <div>Block 2</div>
+      <div>Block 3</div>
+      <div>Block 4</div>
+    </div>
+    <!-- dyspaly:none ( scoatere fisier) -->
+    <style>
+      .block_container2 {
+        display: inline-block;
+        border: 2px dotted gray;
+        margin-top: 10px;
+      }
+      .block_container2 div {
+        border: 1px dotted red;
+      }
+      .block5 {
+        width: 300px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .block6 {
+        width: 100px;
+        height: 70px;
+        margin-right: 10px;
+      }
+      .block7 {
+        width: 100px;
+        height: 80px;
+      }
+    </style>
+    <div class="block_container2">
+      <div class="block 5">Block 5</div>
+      <div class="block 6">Block 6</div>
+      <div class="block 7">Block 7</div>
+      <div class="block 8">
+        <p>Lorep ipsum paragraf!</p>
+      </div>
+    </div>
+    <!-- Max width, min widht, over flow -->
+    <style>
+      .block_container3 {
+        display: block;
+        border: 1px solid black;
+        width: 300px;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      .block_container3 h3 {
+        display: inline-block;
+        border: 1px solid black;
+        max-width: 150px;
+        text-align: center;
+      }
+      .block_container3 p {
+        display: inline-block;
+        margin: 0;
+        border: 1px solid black;
+        min-width: 50px;
+      }
+      .block_container3 .first_paragraph {
+        display: inline-block;
+        height:100px ;
+        margin: 0;
+        border: 1px solid black;
+        min-width: 50px;
+        text-align: center;
+        /* overflow: scroll; */
+        /* overflow-x: scroll; */
+        /* overflow-y: scroll; */
+        overflow: auto;
+      }
+      .block_container3 .second_paragraph {
+        border: 1px solid black;
+        display: inline-block;
+        min-width: 260px;
+        text-align: center;
+        /* visibility: hidden;-ocupa spatiul 
+        dispaly: none;- sterge linia */
+      }
+      .central_cee {
+        display: block;
+        width: 100px;
+        margin: 20px auto;
+      }
+    </style>
+    <div class="block_container3">
+      <div>
+        <h3>Lorep ipsum</h3>
+        <p class="first_paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sed
+          delectus quaerat recusandae voluptates magni cumque dolores veniam
+          reprehenderit tempore?
+        </p>
+        <p class="second_paragraph">Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+    <img class="central_cee" src="central-cee.jpg" />
+  </body>
+</html>
