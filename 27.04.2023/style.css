@@ -1,0 +1,28 @@
+/* Tag selectors */
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+h1 {
+  color: rgb(19, 201, 141);
+  text-align: center;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.titlu_produse{
+    text-align: left;
+}
+#id_titlu{
+    text-decoration: underline;
+}
+.highlight{
+    font-weight: bold;
+    font-style: italic;
+    color: goldenrod;
+}
+.produse_discount .highlight{
+color: green;
+}
