@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <style>
+      .background_container div {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+      }
+      .background_color {
+        background-color: royalblue;
+        background-color: rgba(100, 23, 23, 0.7);
+        padding: 20px;
+      }
+      .background_img1 {
+        background-image: url(central-cee.jpg);
+        /* background-repeat: initial; */
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .background_img2 {
+        background-image: url(central-cee.jpg);
+        background-size: 200px;
+        background-size: contain;
+      }
+      .background_gradien_linear{
+background: linear-gradient(to right, red,green );
+      }
+      .background_gradien_circular{
+        background: radial-gradient( royalblue,black);
+      }
+    </style>
+    <section class="background_container">
+      <div class="background_color">Block 1</div>
+
+      <div class="background_img1"></div>
+      <div class="background_img2"></div>
+      <div class="background_img3"></div>
+
+      <div class="background_gradien_linear"></div>
+      <div class="background_gradien_circular"></div>
+    </section>
+  </body>
+</html>
