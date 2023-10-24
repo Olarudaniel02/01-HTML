@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+ .transition{
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+/* transition-property: widht;
+transition-duration: 1s;
+transition-delay: 0.5s;
+transition-timing-function: ease-in; */
+transition: width 2s ease-out 1s, height 2s ease-in 1s, background-color 0.5 ease-in;
+ }
+ .transition:hover{
+    cursor: pointer;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+ }
+ .text-transition{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 40px;
+font-weight:900;
+transition: color 0.2s, font-size 0.2s ;
+ }
+ .text-transition:hover{
+    cursor: pointer;
+    color: firebrick;
+    font-size: 60px;
+ }
+    </style>
+    <div class="transition"></div>
+    <p class="text-transition">Lorem ipsum</p>
+</body>
+</html>
